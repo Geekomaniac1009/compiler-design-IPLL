@@ -1,0 +1,16 @@
++-------------------------------------+
+| Literal Table (Constants & Strings) |
++-------------------------------------+
+10	 : INTEGER
+3.14	 : FLOAT CONST
+'a'	 : CHAR CONST
+"Hello, world!"	 : STRING
+20	 : INTEGER
+5	 : INTEGER
+1	 : INTEGER
+0	 : INTEGER
+'\n'	 : CHAR CONST
+'\t'	 : CHAR CONST
+100	 : INTEGER
+3.14159e0	 : FLOAT CONST
+-42	 : INTEGER

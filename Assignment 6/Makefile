@@ -1,0 +1,14 @@
+a6it_220101122: a6it_220101122.c
+	gcc a6it_220101122.c -o a6it_220101122 -lfl
+
+a6it_220101122.c: a6it_220101122.l
+	flex -o a6it_220101122.c a6it_220101122.l
+
+a6nit_220101122: a6nit_220101122.c
+	gcc a6nit_220101122.c -o a6nit_220101122 -lfl
+
+a6nit_220101122.c: a6nit_220101122.l
+	flex -o a6nit_220101122.c a6nit_220101122.l
+
+clean:
+	rm -f a6it_220101122.c a6it_220101122 a6nit_220101122.c a6nit_220101122 tokens.txt sym_tab.txt lit_tab.txt

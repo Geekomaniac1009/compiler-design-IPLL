@@ -1,0 +1,205 @@
+<SINGLE LINE COMMENT, 8, // Sample MiniC program for lexical analysis testing>
+<MULTILINE COMMENT, 9, /* 
+   This is a multi-line comment
+   for testing the lexical analyzer
+*/>
+<KEYWORD, 1, int>
+<IDENTIFIER, 2, main>
+<PUNCTUATOR, 7, (>
+<PUNCTUATOR, 7, )>
+<UNDEFINED TOKEN, {>
+<SINGLE LINE COMMENT, 8, // Variable declarations>
+<KEYWORD, 1, int>
+<IDENTIFIER, 2, x>
+<PUNCTUATOR, 7, =>
+<INTEGER CONST, 3, 10>
+<PUNCTUATOR, 7, ;>
+<KEYWORD, 1, float>
+<IDENTIFIER, 2, y>
+<PUNCTUATOR, 7, =>
+<FLOAT CONST, 4, 3.14>
+<PUNCTUATOR, 7, ;>
+<KEYWORD, 1, char>
+<IDENTIFIER, 2, c>
+<PUNCTUATOR, 7, =>
+<CHAR CONST, 5, 'a'>
+<PUNCTUATOR, 7, ;>
+<KEYWORD, 1, char>
+<IDENTIFIER, 2, str>
+<PUNCTUATOR, 7, [>
+<PUNCTUATOR, 7, ]>
+<PUNCTUATOR, 7, =>
+<STRING, 6, "Hello, world!">
+<PUNCTUATOR, 7, ;>
+<SINGLE LINE COMMENT, 8, // Arithmetic operations>
+<KEYWORD, 1, int>
+<IDENTIFIER, 2, sum>
+<PUNCTUATOR, 7, =>
+<IDENTIFIER, 2, x>
+<PUNCTUATOR, 7, +>
+<INTEGER CONST, 3, 20>
+<PUNCTUATOR, 7, ;>
+<KEYWORD, 1, float>
+<IDENTIFIER, 2, product>
+<PUNCTUATOR, 7, =>
+<IDENTIFIER, 2, x>
+<PUNCTUATOR, 7, *>
+<IDENTIFIER, 2, y>
+<PUNCTUATOR, 7, ;>
+<SINGLE LINE COMMENT, 8, // Conditional statements>
+<KEYWORD, 1, if>
+<PUNCTUATOR, 7, (>
+<IDENTIFIER, 2, x>
+<UNDEFINED TOKEN, >>
+<INTEGER CONST, 3, 5>
+<PUNCTUATOR, 7, )>
+<KEYWORD, 1, begin>
+<IDENTIFIER, 2, x>
+<PUNCTUATOR, 7, =>
+<IDENTIFIER, 2, x>
+<PUNCTUATOR, 7, ->
+<INTEGER CONST, 3, 1>
+<PUNCTUATOR, 7, ;>
+<KEYWORD, 1, end>
+<KEYWORD, 1, else>
+<KEYWORD, 1, begin>
+<IDENTIFIER, 2, x>
+<PUNCTUATOR, 7, =>
+<IDENTIFIER, 2, x>
+<PUNCTUATOR, 7, +>
+<INTEGER CONST, 3, 1>
+<PUNCTUATOR, 7, ;>
+<KEYWORD, 1, end>
+<KEYWORD, 1, while>
+<PUNCTUATOR, 7, (>
+<IDENTIFIER, 2, x>
+<UNDEFINED TOKEN, >>
+<INTEGER CONST, 3, 0>
+<PUNCTUATOR, 7, )>
+<KEYWORD, 1, begin>
+<IDENTIFIER, 2, x>
+<PUNCTUATOR, 7, =>
+<IDENTIFIER, 2, x>
+<PUNCTUATOR, 7, ->
+<INTEGER CONST, 3, 1>
+<PUNCTUATOR, 7, ;>
+<KEYWORD, 1, end>
+<KEYWORD, 1, for>
+<PUNCTUATOR, 7, (>
+<KEYWORD, 1, int>
+<IDENTIFIER, 2, i>
+<PUNCTUATOR, 7, =>
+<INTEGER CONST, 3, 0>
+<PUNCTUATOR, 7, ;>
+<IDENTIFIER, 2, i>
+<UNDEFINED TOKEN, <>
+<INTEGER CONST, 3, 10>
+<PUNCTUATOR, 7, ;>
+<IDENTIFIER, 2, i>
+<PUNCTUATOR, 7, =>
+<IDENTIFIER, 2, i>
+<PUNCTUATOR, 7, +>
+<INTEGER CONST, 3, 1>
+<PUNCTUATOR, 7, )>
+<KEYWORD, 1, begin>
+<IDENTIFIER, 2, sum>
+<PUNCTUATOR, 7, =>
+<IDENTIFIER, 2, sum>
+<PUNCTUATOR, 7, +>
+<IDENTIFIER, 2, i>
+<PUNCTUATOR, 7, ;>
+<KEYWORD, 1, end>
+<SINGLE LINE COMMENT, 8, // Special characters and escape sequences>
+<KEYWORD, 1, char>
+<IDENTIFIER, 2, newline>
+<PUNCTUATOR, 7, =>
+<CHAR CONST, 5, '\n'>
+<PUNCTUATOR, 7, ;>
+<KEYWORD, 1, char>
+<IDENTIFIER, 2, tab>
+<PUNCTUATOR, 7, =>
+<CHAR CONST, 5, '\t'>
+<PUNCTUATOR, 7, ;>
+<SINGLE LINE COMMENT, 8, // Constants>
+<KEYWORD, 1, const>
+<KEYWORD, 1, int>
+<IDENTIFIER, 2, MAX_SIZE>
+<PUNCTUATOR, 7, =>
+<INTEGER CONST, 3, 100>
+<PUNCTUATOR, 7, ;>
+<KEYWORD, 1, float>
+<IDENTIFIER, 2, PI>
+<PUNCTUATOR, 7, =>
+<FLOAT CONST, 4, 3.14159e0>
+<PUNCTUATOR, 7, ;>
+<KEYWORD, 1, int>
+<IDENTIFIER, 2, negative>
+<PUNCTUATOR, 7, =>
+<INTEGER CONST, 3, -42>
+<PUNCTUATOR, 7, ;>
+<SINGLE LINE COMMENT, 8, // Testing various punctuators>
+<KEYWORD, 1, int>
+<IDENTIFIER, 2, array>
+<PUNCTUATOR, 7, [>
+<INTEGER CONST, 3, 10>
+<PUNCTUATOR, 7, ]>
+<PUNCTUATOR, 7, ;>
+<KEYWORD, 1, int>
+<PUNCTUATOR, 7, *>
+<IDENTIFIER, 2, ptr>
+<PUNCTUATOR, 7, =>
+<PUNCTUATOR, 7, &>
+<IDENTIFIER, 2, array>
+<PUNCTUATOR, 7, [>
+<INTEGER CONST, 3, 0>
+<PUNCTUATOR, 7, ]>
+<PUNCTUATOR, 7, ;>
+<SINGLE LINE COMMENT, 8, // Testing operators>
+<KEYWORD, 1, bool>
+<IDENTIFIER, 2, isEqual>
+<PUNCTUATOR, 7, =>
+<PUNCTUATOR, 7, (>
+<IDENTIFIER, 2, x>
+<PUNCTUATOR, 7, ==>
+<IDENTIFIER, 2, y>
+<PUNCTUATOR, 7, )>
+<PUNCTUATOR, 7, ;>
+<KEYWORD, 1, bool>
+<IDENTIFIER, 2, isNotEqual>
+<PUNCTUATOR, 7, =>
+<PUNCTUATOR, 7, (>
+<IDENTIFIER, 2, x>
+<PUNCTUATOR, 7, !=>
+<IDENTIFIER, 2, y>
+<PUNCTUATOR, 7, )>
+<PUNCTUATOR, 7, ;>
+<KEYWORD, 1, bool>
+<IDENTIFIER, 2, logicalAnd>
+<PUNCTUATOR, 7, =>
+<PUNCTUATOR, 7, (>
+<IDENTIFIER, 2, x>
+<UNDEFINED TOKEN, >>
+<INTEGER CONST, 3, 0>
+<PUNCTUATOR, 7, &&>
+<IDENTIFIER, 2, y>
+<UNDEFINED TOKEN, >>
+<INTEGER CONST, 3, 0>
+<PUNCTUATOR, 7, )>
+<PUNCTUATOR, 7, ;>
+<KEYWORD, 1, bool>
+<IDENTIFIER, 2, logicalOr>
+<PUNCTUATOR, 7, =>
+<PUNCTUATOR, 7, (>
+<IDENTIFIER, 2, x>
+<UNDEFINED TOKEN, >>
+<INTEGER CONST, 3, 0>
+<PUNCTUATOR, 7, ||>
+<IDENTIFIER, 2, y>
+<UNDEFINED TOKEN, >>
+<INTEGER CONST, 3, 0>
+<PUNCTUATOR, 7, )>
+<PUNCTUATOR, 7, ;>
+<KEYWORD, 1, return>
+<INTEGER CONST, 3, 0>
+<PUNCTUATOR, 7, ;>
+<UNDEFINED TOKEN, }>

@@ -1,0 +1,22 @@
++----------------------------------+
+| Symbol Table (Identifiers)       |
++----------------------------------+
+main	 : IDENTIFIER
+x	 : IDENTIFIER
+y	 : IDENTIFIER
+c	 : IDENTIFIER
+str	 : IDENTIFIER
+sum	 : IDENTIFIER
+product	 : IDENTIFIER
+i	 : IDENTIFIER
+newline	 : IDENTIFIER
+tab	 : IDENTIFIER
+MAX_SIZE	 : IDENTIFIER
+PI	 : IDENTIFIER
+negative	 : IDENTIFIER
+array	 : IDENTIFIER
+ptr	 : IDENTIFIER
+isEqual	 : IDENTIFIER
+isNotEqual	 : IDENTIFIER
+logicalAnd	 : IDENTIFIER
+logicalOr	 : IDENTIFIER
