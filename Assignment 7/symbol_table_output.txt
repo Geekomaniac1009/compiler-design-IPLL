@@ -1,0 +1,24 @@
+Name                 Type                           Scope      Line      
+--------------------------------------------------------------------------
+f1                   integer                        1          13        
+f2                   integer                        1          14        
+f3                   integer                        1          15        
+a                    pointer to integer             1          23        
+b                    pointer to integer             1          23        
+temp                 integer                        1          24        
+a                    integer                        1          31        
+b                    integer                        1          31        
+m                    integer                        1          36        
+n                    integer                        1          37        
+p                    integer                        1          38        
+x                    integer                        1          86        
+y                    integer                        1          87        
+c                    char                           1          88        
+arr                  array[10] of integer           1          89        
+ptr                  integer                        1          90        
+flag                 integer                        1          114       
+i                    integer                        1          115       
+j                    integer                        1          118       
+k                    array[20] of integer           2          123       
+retires              integer                        3          125       
+q                    integer                        2          130       

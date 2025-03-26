@@ -1,0 +1,1302 @@
+Line 10: Reduce: type_specifier -> void
+Line 10: Reduce: function_declarator -> identifier ( )
+Line 13: Reduce: type_specifier -> integer
+Line 13: Reduce: direct_declarator -> IDENTIFIER (f1)
+Line 13: Reduce: declarator -> direct_declarator
+Line 13: Reduce: init_declarator -> declarator
+Line 13: Reduce: declaration -> type_specifier init_declarator ;
+Line 13: Reduce: block_item -> declaration
+Line 13: Reduce: block_item_list -> block_item
+Line 14: Reduce: type_specifier -> integer
+Line 14: Reduce: direct_declarator -> IDENTIFIER (f2)
+Line 14: Reduce: declarator -> direct_declarator
+Line 14: Reduce: init_declarator -> declarator
+Line 14: Reduce: declaration -> type_specifier init_declarator ;
+Line 14: Reduce: block_item -> declaration
+Line 14: Reduce: block_item_list -> block_item_list block_item
+Line 15: Reduce: type_specifier -> integer
+Line 15: Reduce: direct_declarator -> IDENTIFIER (f3)
+Line 15: Reduce: declarator -> direct_declarator
+Line 15: Reduce: init_declarator -> declarator
+Line 15: Reduce: declaration -> type_specifier init_declarator ;
+Line 15: Reduce: block_item -> declaration
+Line 15: Reduce: block_item_list -> block_item_list block_item
+Line 17: Reduce: primary_expression -> IDENTIFIER (f1)
+Line 17: Reduce: postfix_expression -> primary_expression
+Line 17: Reduce: unary_expression -> postfix_expression
+Line 17: Reduce: primary_expression -> FLOATING_CONSTANT (3.140000)
+Line 17: Reduce: postfix_expression -> primary_expression
+Line 17: Reduce: unary_expression -> postfix_expression
+Line 17: Reduce: multiplicative_expression -> unary_expression
+Line 17: Reduce: additive_expression -> multiplicative_expression
+Line 17: Reduce: relational_expression -> additive_expression
+Line 17: Reduce: equality_expression -> relational_expression
+Line 17: Reduce: logical_AND_expression -> equality_expression
+Line 17: Reduce: logical_OR_expression -> logical_AND_expression
+Line 17: Reduce: conditional_expression -> logical_OR_expression
+Line 17: Reduce: assignment_expression -> conditional_expression
+Line 17: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 17: Reduce: expression -> assignment_expression
+Line 17: Reduce: expression_opt -> expression
+Line 17: Reduce: expression_statement -> expression_opt ;
+Line 17: Reduce: statement -> expression_statement
+Line 17: Reduce: block_item -> statement
+Line 17: Reduce: block_item_list -> block_item_list block_item
+Line 18: Reduce: primary_expression -> IDENTIFIER (f2)
+Line 18: Reduce: postfix_expression -> primary_expression
+Line 18: Reduce: unary_expression -> postfix_expression
+Line 18: Reduce: primary_expression -> FLOATING_CONSTANT (0.123000)
+Line 18: Reduce: postfix_expression -> primary_expression
+Line 18: Reduce: unary_expression -> postfix_expression
+Line 18: Reduce: multiplicative_expression -> unary_expression
+Line 18: Reduce: additive_expression -> multiplicative_expression
+Line 18: Reduce: relational_expression -> additive_expression
+Line 18: Reduce: equality_expression -> relational_expression
+Line 18: Reduce: logical_AND_expression -> equality_expression
+Line 18: Reduce: logical_OR_expression -> logical_AND_expression
+Line 18: Reduce: conditional_expression -> logical_OR_expression
+Line 18: Reduce: assignment_expression -> conditional_expression
+Line 18: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 18: Reduce: expression -> assignment_expression
+Line 18: Reduce: expression_opt -> expression
+Line 18: Reduce: expression_statement -> expression_opt ;
+Line 18: Reduce: statement -> expression_statement
+Line 18: Reduce: block_item -> statement
+Line 18: Reduce: block_item_list -> block_item_list block_item
+Line 19: Reduce: primary_expression -> IDENTIFIER (f3)
+Line 19: Reduce: postfix_expression -> primary_expression
+Line 19: Reduce: unary_expression -> postfix_expression
+Line 19: Reduce: primary_expression -> FLOATING_CONSTANT (2000.000000)
+Line 19: Reduce: postfix_expression -> primary_expression
+Line 19: Reduce: unary_expression -> postfix_expression
+Line 19: Reduce: multiplicative_expression -> unary_expression
+Line 19: Reduce: additive_expression -> multiplicative_expression
+Line 19: Reduce: relational_expression -> additive_expression
+Line 19: Reduce: equality_expression -> relational_expression
+Line 19: Reduce: logical_AND_expression -> equality_expression
+Line 19: Reduce: logical_OR_expression -> logical_AND_expression
+Line 19: Reduce: conditional_expression -> logical_OR_expression
+Line 19: Reduce: assignment_expression -> conditional_expression
+Line 19: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 19: Reduce: expression -> assignment_expression
+Line 19: Reduce: expression_opt -> expression
+Line 19: Reduce: expression_statement -> expression_opt ;
+Line 19: Reduce: statement -> expression_statement
+Line 19: Reduce: block_item -> statement
+Line 19: Reduce: block_item_list -> block_item_list block_item
+Line 20: Reduce: block_item_list_opt -> block_item_list
+Line 20: Reduce: compound_statement -> begin block_item_list end
+Line 20: Reduce: function_definition -> type_specifier function_declarator compound_statement
+Line 23: Reduce: type_specifier -> void
+Line 23: Reduce: type_specifier -> integer
+Line 23: Reduce: pointer -> *
+Line 23: Reduce: parameter_declaration -> type_specifier pointer IDENTIFIER (a)
+Line 23: Reduce: parameter_list -> parameter_declaration
+Line 23: Reduce: type_specifier -> integer
+Line 23: Reduce: pointer -> *
+Line 23: Reduce: parameter_declaration -> type_specifier pointer IDENTIFIER (b)
+Line 23: Reduce: parameter_list -> parameter_list , parameter_declaration
+Line 23: Reduce: function_declarator -> identifier ( parameter_list )
+Line 24: Reduce: type_specifier -> integer
+Line 24: Reduce: direct_declarator -> IDENTIFIER (temp)
+Line 24: Reduce: declarator -> direct_declarator
+Line 24: Reduce: init_declarator -> declarator
+Line 24: Reduce: declaration -> type_specifier init_declarator ;
+Line 24: Reduce: block_item -> declaration
+Line 24: Reduce: block_item_list -> block_item
+Line 25: Reduce: primary_expression -> IDENTIFIER (temp)
+Line 25: Reduce: postfix_expression -> primary_expression
+Line 25: Reduce: unary_expression -> postfix_expression
+Line 25: Reduce: unary_operator -> * (dereference op) 
+Line 25: Reduce: primary_expression -> IDENTIFIER (a)
+Line 25: Reduce: postfix_expression -> primary_expression
+Line 25: Reduce: unary_expression -> postfix_expression
+Line 25: Reduce: unary_expression -> unary_operator unary_expression
+Line 25: Reduce: multiplicative_expression -> unary_expression
+Line 25: Reduce: additive_expression -> multiplicative_expression
+Line 25: Reduce: relational_expression -> additive_expression
+Line 25: Reduce: equality_expression -> relational_expression
+Line 25: Reduce: logical_AND_expression -> equality_expression
+Line 25: Reduce: logical_OR_expression -> logical_AND_expression
+Line 25: Reduce: conditional_expression -> logical_OR_expression
+Line 25: Reduce: assignment_expression -> conditional_expression
+Line 25: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 25: Reduce: expression -> assignment_expression
+Line 25: Reduce: expression_opt -> expression
+Line 25: Reduce: expression_statement -> expression_opt ;
+Line 25: Reduce: statement -> expression_statement
+Line 25: Reduce: block_item -> statement
+Line 25: Reduce: block_item_list -> block_item_list block_item
+Line 26: Reduce: unary_operator -> * (dereference op) 
+Line 26: Reduce: primary_expression -> IDENTIFIER (a)
+Line 26: Reduce: postfix_expression -> primary_expression
+Line 26: Reduce: unary_expression -> postfix_expression
+Line 26: Reduce: unary_expression -> unary_operator unary_expression
+Line 26: Reduce: unary_operator -> * (dereference op) 
+Line 26: Reduce: primary_expression -> IDENTIFIER (b)
+Line 26: Reduce: postfix_expression -> primary_expression
+Line 26: Reduce: unary_expression -> postfix_expression
+Line 26: Reduce: unary_expression -> unary_operator unary_expression
+Line 26: Reduce: multiplicative_expression -> unary_expression
+Line 26: Reduce: additive_expression -> multiplicative_expression
+Line 26: Reduce: relational_expression -> additive_expression
+Line 26: Reduce: equality_expression -> relational_expression
+Line 26: Reduce: logical_AND_expression -> equality_expression
+Line 26: Reduce: logical_OR_expression -> logical_AND_expression
+Line 26: Reduce: conditional_expression -> logical_OR_expression
+Line 26: Reduce: assignment_expression -> conditional_expression
+Line 26: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 26: Reduce: expression -> assignment_expression
+Line 26: Reduce: expression_opt -> expression
+Line 26: Reduce: expression_statement -> expression_opt ;
+Line 26: Reduce: statement -> expression_statement
+Line 26: Reduce: block_item -> statement
+Line 26: Reduce: block_item_list -> block_item_list block_item
+Line 27: Reduce: unary_operator -> * (dereference op) 
+Line 27: Reduce: primary_expression -> IDENTIFIER (b)
+Line 27: Reduce: postfix_expression -> primary_expression
+Line 27: Reduce: unary_expression -> postfix_expression
+Line 27: Reduce: unary_expression -> unary_operator unary_expression
+Line 27: Reduce: primary_expression -> IDENTIFIER (temp)
+Line 27: Reduce: postfix_expression -> primary_expression
+Line 27: Reduce: unary_expression -> postfix_expression
+Line 27: Reduce: multiplicative_expression -> unary_expression
+Line 27: Reduce: additive_expression -> multiplicative_expression
+Line 27: Reduce: relational_expression -> additive_expression
+Line 27: Reduce: equality_expression -> relational_expression
+Line 27: Reduce: logical_AND_expression -> equality_expression
+Line 27: Reduce: logical_OR_expression -> logical_AND_expression
+Line 27: Reduce: conditional_expression -> logical_OR_expression
+Line 27: Reduce: assignment_expression -> conditional_expression
+Line 27: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 27: Reduce: expression -> assignment_expression
+Line 27: Reduce: expression_opt -> expression
+Line 27: Reduce: expression_statement -> expression_opt ;
+Line 27: Reduce: statement -> expression_statement
+Line 27: Reduce: block_item -> statement
+Line 27: Reduce: block_item_list -> block_item_list block_item
+Line 28: Reduce: block_item_list_opt -> block_item_list
+Line 28: Reduce: compound_statement -> begin block_item_list end
+Line 28: Reduce: function_definition -> type_specifier function_declarator compound_statement
+Line 31: Reduce: type_specifier -> integer
+Line 31: Reduce: type_specifier -> integer
+Line 31: Reduce: parameter_declaration -> type_specifier IDENTIFIER (a)
+Line 31: Reduce: parameter_list -> parameter_declaration
+Line 31: Reduce: type_specifier -> integer
+Line 31: Reduce: parameter_declaration -> type_specifier IDENTIFIER (b)
+Line 31: Reduce: parameter_list -> parameter_list , parameter_declaration
+Line 31: Reduce: function_declarator -> identifier ( parameter_list )
+Line 32: Reduce: primary_expression -> IDENTIFIER (a)
+Line 32: Reduce: postfix_expression -> primary_expression
+Line 32: Reduce: unary_expression -> postfix_expression
+Line 32: Reduce: multiplicative_expression -> unary_expression
+Line 32: Reduce: additive_expression -> multiplicative_expression
+Line 32: Reduce: primary_expression -> IDENTIFIER (b)
+Line 32: Reduce: postfix_expression -> primary_expression
+Line 32: Reduce: unary_expression -> postfix_expression
+Line 32: Reduce: multiplicative_expression -> unary_expression
+Line 32: Reduce: additive_expression -> additive_expression + multiplicative_expression (addn op) 
+Line 32: Reduce: relational_expression -> additive_expression
+Line 32: Reduce: equality_expression -> relational_expression
+Line 32: Reduce: logical_AND_expression -> equality_expression
+Line 32: Reduce: logical_OR_expression -> logical_AND_expression
+Line 32: Reduce: conditional_expression -> logical_OR_expression
+Line 32: Reduce: assignment_expression -> conditional_expression
+Line 32: Reduce: expression -> assignment_expression
+Line 32: Reduce: expression_opt -> expression
+Line 32: Reduce: jump_statement -> return expression_opt ;
+Line 32: Reduce: statement -> jump_statement
+Line 32: Reduce: block_item -> statement
+Line 32: Reduce: block_item_list -> block_item
+Line 33: Reduce: block_item_list_opt -> block_item_list
+Line 33: Reduce: compound_statement -> begin block_item_list end
+Line 33: Reduce: function_definition -> type_specifier function_declarator compound_statement
+Line 35: Reduce: type_specifier -> void
+Line 35: Reduce: function_declarator -> identifier ( )
+Line 36: Reduce: type_specifier -> integer
+Line 36: Reduce: direct_declarator -> IDENTIFIER (m)
+Line 36: Reduce: declarator -> direct_declarator
+Line 36: Reduce: init_declarator -> declarator
+Line 36: Reduce: declaration -> type_specifier init_declarator ;
+Line 36: Reduce: block_item -> declaration
+Line 36: Reduce: block_item_list -> block_item
+Line 37: Reduce: type_specifier -> integer
+Line 37: Reduce: direct_declarator -> IDENTIFIER (n)
+Line 37: Reduce: declarator -> direct_declarator
+Line 37: Reduce: init_declarator -> declarator
+Line 37: Reduce: declaration -> type_specifier init_declarator ;
+Line 37: Reduce: block_item -> declaration
+Line 37: Reduce: block_item_list -> block_item_list block_item
+Line 38: Reduce: type_specifier -> integer
+Line 38: Reduce: direct_declarator -> IDENTIFIER (p)
+Line 38: Reduce: declarator -> direct_declarator
+Line 38: Reduce: init_declarator -> declarator
+Line 38: Reduce: declaration -> type_specifier init_declarator ;
+Line 38: Reduce: block_item -> declaration
+Line 38: Reduce: block_item_list -> block_item_list block_item
+Line 40: Reduce: primary_expression -> IDENTIFIER (m)
+Line 40: Reduce: postfix_expression -> primary_expression
+Line 40: Reduce: unary_expression -> postfix_expression
+Line 40: Reduce: primary_expression -> INTEGER_CONSTANT (5)
+Line 40: Reduce: postfix_expression -> primary_expression
+Line 40: Reduce: unary_expression -> postfix_expression
+Line 40: Reduce: multiplicative_expression -> unary_expression
+Line 40: Reduce: additive_expression -> multiplicative_expression
+Line 40: Reduce: primary_expression -> INTEGER_CONSTANT (3)
+Line 40: Reduce: postfix_expression -> primary_expression
+Line 40: Reduce: unary_expression -> postfix_expression
+Line 40: Reduce: multiplicative_expression -> unary_expression
+Line 40: Reduce: additive_expression -> additive_expression + multiplicative_expression (addn op) 
+Line 40: Reduce: relational_expression -> additive_expression
+Line 40: Reduce: equality_expression -> relational_expression
+Line 40: Reduce: logical_AND_expression -> equality_expression
+Line 40: Reduce: logical_OR_expression -> logical_AND_expression
+Line 40: Reduce: conditional_expression -> logical_OR_expression
+Line 40: Reduce: assignment_expression -> conditional_expression
+Line 40: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 40: Reduce: expression -> assignment_expression
+Line 40: Reduce: expression_opt -> expression
+Line 40: Reduce: expression_statement -> expression_opt ;
+Line 40: Reduce: statement -> expression_statement
+Line 40: Reduce: block_item -> statement
+Line 40: Reduce: block_item_list -> block_item_list block_item
+Line 41: Reduce: primary_expression -> IDENTIFIER (n)
+Line 41: Reduce: postfix_expression -> primary_expression
+Line 41: Reduce: unary_expression -> postfix_expression
+Line 41: Reduce: primary_expression -> INTEGER_CONSTANT (10)
+Line 41: Reduce: postfix_expression -> primary_expression
+Line 41: Reduce: unary_expression -> postfix_expression
+Line 41: Reduce: multiplicative_expression -> unary_expression
+Line 41: Reduce: additive_expression -> multiplicative_expression
+Line 41: Reduce: primary_expression -> INTEGER_CONSTANT (4)
+Line 41: Reduce: postfix_expression -> primary_expression
+Line 41: Reduce: unary_expression -> postfix_expression
+Line 41: Reduce: multiplicative_expression -> unary_expression
+Line 41: Reduce: additive_expression -> additive_expression - multiplicative_expression (sub op) 
+Line 41: Reduce: relational_expression -> additive_expression
+Line 41: Reduce: equality_expression -> relational_expression
+Line 41: Reduce: logical_AND_expression -> equality_expression
+Line 41: Reduce: logical_OR_expression -> logical_AND_expression
+Line 41: Reduce: conditional_expression -> logical_OR_expression
+Line 41: Reduce: assignment_expression -> conditional_expression
+Line 41: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 41: Reduce: expression -> assignment_expression
+Line 41: Reduce: expression_opt -> expression
+Line 41: Reduce: expression_statement -> expression_opt ;
+Line 41: Reduce: statement -> expression_statement
+Line 41: Reduce: block_item -> statement
+Line 41: Reduce: block_item_list -> block_item_list block_item
+Line 42: Reduce: primary_expression -> IDENTIFIER (p)
+Line 42: Reduce: postfix_expression -> primary_expression
+Line 42: Reduce: unary_expression -> postfix_expression
+Line 42: Reduce: primary_expression -> INTEGER_CONSTANT (3)
+Line 42: Reduce: postfix_expression -> primary_expression
+Line 42: Reduce: unary_expression -> postfix_expression
+Line 42: Reduce: multiplicative_expression -> unary_expression
+Line 42: Reduce: primary_expression -> INTEGER_CONSTANT (6)
+Line 42: Reduce: postfix_expression -> primary_expression
+Line 42: Reduce: unary_expression -> postfix_expression
+Line 42: Reduce: multiplicative_expression -> multiplicative_expression * unary_expression (mult op) 
+Line 42: Reduce: additive_expression -> multiplicative_expression
+Line 42: Reduce: relational_expression -> additive_expression
+Line 42: Reduce: equality_expression -> relational_expression
+Line 42: Reduce: logical_AND_expression -> equality_expression
+Line 42: Reduce: logical_OR_expression -> logical_AND_expression
+Line 42: Reduce: conditional_expression -> logical_OR_expression
+Line 42: Reduce: assignment_expression -> conditional_expression
+Line 42: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 42: Reduce: expression -> assignment_expression
+Line 42: Reduce: expression_opt -> expression
+Line 42: Reduce: expression_statement -> expression_opt ;
+Line 42: Reduce: statement -> expression_statement
+Line 42: Reduce: block_item -> statement
+Line 42: Reduce: block_item_list -> block_item_list block_item
+Line 43: Reduce: primary_expression -> IDENTIFIER (m)
+Line 43: Reduce: postfix_expression -> primary_expression
+Line 43: Reduce: unary_expression -> postfix_expression
+Line 43: Reduce: primary_expression -> INTEGER_CONSTANT (15)
+Line 43: Reduce: postfix_expression -> primary_expression
+Line 43: Reduce: unary_expression -> postfix_expression
+Line 43: Reduce: multiplicative_expression -> unary_expression
+Line 43: Reduce: primary_expression -> INTEGER_CONSTANT (3)
+Line 43: Reduce: postfix_expression -> primary_expression
+Line 43: Reduce: unary_expression -> postfix_expression
+Line 43: Reduce: multiplicative_expression -> multiplicative_expression / unary_expression (div op) 
+Line 43: Reduce: additive_expression -> multiplicative_expression
+Line 43: Reduce: relational_expression -> additive_expression
+Line 43: Reduce: equality_expression -> relational_expression
+Line 43: Reduce: logical_AND_expression -> equality_expression
+Line 43: Reduce: logical_OR_expression -> logical_AND_expression
+Line 43: Reduce: conditional_expression -> logical_OR_expression
+Line 43: Reduce: assignment_expression -> conditional_expression
+Line 43: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 43: Reduce: expression -> assignment_expression
+Line 43: Reduce: expression_opt -> expression
+Line 43: Reduce: expression_statement -> expression_opt ;
+Line 43: Reduce: statement -> expression_statement
+Line 43: Reduce: block_item -> statement
+Line 43: Reduce: block_item_list -> block_item_list block_item
+Line 44: Reduce: primary_expression -> IDENTIFIER (n)
+Line 44: Reduce: postfix_expression -> primary_expression
+Line 44: Reduce: unary_expression -> postfix_expression
+Line 44: Reduce: primary_expression -> INTEGER_CONSTANT (10)
+Line 44: Reduce: postfix_expression -> primary_expression
+Line 44: Reduce: unary_expression -> postfix_expression
+Line 44: Reduce: multiplicative_expression -> unary_expression
+Line 44: Reduce: primary_expression -> INTEGER_CONSTANT (3)
+Line 44: Reduce: postfix_expression -> primary_expression
+Line 44: Reduce: unary_expression -> postfix_expression
+Line 44: Reduce: multiplicative_expression -> multiplicative_expression % unary_expression (mod op) 
+Line 44: Reduce: additive_expression -> multiplicative_expression
+Line 44: Reduce: relational_expression -> additive_expression
+Line 44: Reduce: equality_expression -> relational_expression
+Line 44: Reduce: logical_AND_expression -> equality_expression
+Line 44: Reduce: logical_OR_expression -> logical_AND_expression
+Line 44: Reduce: conditional_expression -> logical_OR_expression
+Line 44: Reduce: assignment_expression -> conditional_expression
+Line 44: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 44: Reduce: expression -> assignment_expression
+Line 44: Reduce: expression_opt -> expression
+Line 44: Reduce: expression_statement -> expression_opt ;
+Line 44: Reduce: statement -> expression_statement
+Line 44: Reduce: block_item -> statement
+Line 44: Reduce: block_item_list -> block_item_list block_item
+Line 47: Reduce: primary_expression -> IDENTIFIER (m)
+Line 47: Reduce: postfix_expression -> primary_expression
+Line 47: Reduce: unary_expression -> postfix_expression
+Line 47: Reduce: multiplicative_expression -> unary_expression
+Line 47: Reduce: additive_expression -> multiplicative_expression
+Line 47: Reduce: relational_expression -> additive_expression
+Line 47: Reduce: primary_expression -> IDENTIFIER (n)
+Line 47: Reduce: postfix_expression -> primary_expression
+Line 47: Reduce: unary_expression -> postfix_expression
+Line 47: Reduce: multiplicative_expression -> unary_expression
+Line 47: Reduce: additive_expression -> multiplicative_expression
+Line 47: Reduce: relational_expression -> relational_expression < additive_expression (lt op) 
+Line 47: Reduce: equality_expression -> relational_expression
+Line 47: Reduce: logical_AND_expression -> equality_expression
+Line 47: Reduce: logical_OR_expression -> logical_AND_expression
+Line 47: Reduce: conditional_expression -> logical_OR_expression
+Line 47: Reduce: assignment_expression -> conditional_expression
+Line 47: Reduce: expression -> assignment_expression
+Line 48: Reduce: primary_expression -> IDENTIFIER (p)
+Line 48: Reduce: postfix_expression -> primary_expression
+Line 48: Reduce: unary_expression -> postfix_expression
+Line 48: Reduce: primary_expression -> INTEGER_CONSTANT (1)
+Line 48: Reduce: postfix_expression -> primary_expression
+Line 48: Reduce: unary_expression -> postfix_expression
+Line 48: Reduce: multiplicative_expression -> unary_expression
+Line 48: Reduce: additive_expression -> multiplicative_expression
+Line 48: Reduce: relational_expression -> additive_expression
+Line 48: Reduce: equality_expression -> relational_expression
+Line 48: Reduce: logical_AND_expression -> equality_expression
+Line 48: Reduce: logical_OR_expression -> logical_AND_expression
+Line 48: Reduce: conditional_expression -> logical_OR_expression
+Line 48: Reduce: assignment_expression -> conditional_expression
+Line 48: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 48: Reduce: expression -> assignment_expression
+Line 48: Reduce: expression_opt -> expression
+Line 48: Reduce: expression_statement -> expression_opt ;
+Line 48: Reduce: statement -> expression_statement
+Line 48: Reduce: block_item -> statement
+Line 48: Reduce: block_item_list -> block_item
+Line 49: Reduce: block_item_list_opt -> block_item_list
+Line 49: Reduce: compound_statement -> begin block_item_list end
+Line 49: Reduce: statement -> compound_statement
+Line 51: Reduce: selection_statement -> if ( expression ) statement
+Line 51: Reduce: statement -> selection_statement
+Line 51: Reduce: block_item -> statement
+Line 51: Reduce: block_item_list -> block_item_list block_item
+Line 51: Reduce: primary_expression -> IDENTIFIER (m)
+Line 51: Reduce: postfix_expression -> primary_expression
+Line 51: Reduce: unary_expression -> postfix_expression
+Line 51: Reduce: multiplicative_expression -> unary_expression
+Line 51: Reduce: additive_expression -> multiplicative_expression
+Line 51: Reduce: relational_expression -> additive_expression
+Line 51: Reduce: primary_expression -> IDENTIFIER (n)
+Line 51: Reduce: postfix_expression -> primary_expression
+Line 51: Reduce: unary_expression -> postfix_expression
+Line 51: Reduce: multiplicative_expression -> unary_expression
+Line 51: Reduce: additive_expression -> multiplicative_expression
+Line 51: Reduce: relational_expression -> relational_expression > additive_expression (gt op) 
+Line 51: Reduce: equality_expression -> relational_expression
+Line 51: Reduce: logical_AND_expression -> equality_expression
+Line 51: Reduce: logical_OR_expression -> logical_AND_expression
+Line 51: Reduce: conditional_expression -> logical_OR_expression
+Line 51: Reduce: assignment_expression -> conditional_expression
+Line 51: Reduce: expression -> assignment_expression
+Line 52: Reduce: primary_expression -> IDENTIFIER (p)
+Line 52: Reduce: postfix_expression -> primary_expression
+Line 52: Reduce: unary_expression -> postfix_expression
+Line 52: Reduce: primary_expression -> INTEGER_CONSTANT (2)
+Line 52: Reduce: postfix_expression -> primary_expression
+Line 52: Reduce: unary_expression -> postfix_expression
+Line 52: Reduce: multiplicative_expression -> unary_expression
+Line 52: Reduce: additive_expression -> multiplicative_expression
+Line 52: Reduce: relational_expression -> additive_expression
+Line 52: Reduce: equality_expression -> relational_expression
+Line 52: Reduce: logical_AND_expression -> equality_expression
+Line 52: Reduce: logical_OR_expression -> logical_AND_expression
+Line 52: Reduce: conditional_expression -> logical_OR_expression
+Line 52: Reduce: assignment_expression -> conditional_expression
+Line 52: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 52: Reduce: expression -> assignment_expression
+Line 52: Reduce: expression_opt -> expression
+Line 52: Reduce: expression_statement -> expression_opt ;
+Line 52: Reduce: statement -> expression_statement
+Line 52: Reduce: block_item -> statement
+Line 52: Reduce: block_item_list -> block_item
+Line 53: Reduce: block_item_list_opt -> block_item_list
+Line 53: Reduce: compound_statement -> begin block_item_list end
+Line 53: Reduce: statement -> compound_statement
+Line 55: Reduce: selection_statement -> if ( expression ) statement
+Line 55: Reduce: statement -> selection_statement
+Line 55: Reduce: block_item -> statement
+Line 55: Reduce: block_item_list -> block_item_list block_item
+Line 55: Reduce: primary_expression -> IDENTIFIER (m)
+Line 55: Reduce: postfix_expression -> primary_expression
+Line 55: Reduce: unary_expression -> postfix_expression
+Line 55: Reduce: multiplicative_expression -> unary_expression
+Line 55: Reduce: additive_expression -> multiplicative_expression
+Line 55: Reduce: relational_expression -> additive_expression
+Line 55: Reduce: primary_expression -> IDENTIFIER (n)
+Line 55: Reduce: postfix_expression -> primary_expression
+Line 55: Reduce: unary_expression -> postfix_expression
+Line 55: Reduce: multiplicative_expression -> unary_expression
+Line 55: Reduce: additive_expression -> multiplicative_expression
+Line 55: Reduce: relational_expression -> relational_expression <= additive_expression (lte op) 
+Line 55: Reduce: equality_expression -> relational_expression
+Line 55: Reduce: logical_AND_expression -> equality_expression
+Line 55: Reduce: logical_OR_expression -> logical_AND_expression
+Line 55: Reduce: conditional_expression -> logical_OR_expression
+Line 55: Reduce: assignment_expression -> conditional_expression
+Line 55: Reduce: expression -> assignment_expression
+Line 56: Reduce: primary_expression -> IDENTIFIER (p)
+Line 56: Reduce: postfix_expression -> primary_expression
+Line 56: Reduce: unary_expression -> postfix_expression
+Line 56: Reduce: primary_expression -> INTEGER_CONSTANT (3)
+Line 56: Reduce: postfix_expression -> primary_expression
+Line 56: Reduce: unary_expression -> postfix_expression
+Line 56: Reduce: multiplicative_expression -> unary_expression
+Line 56: Reduce: additive_expression -> multiplicative_expression
+Line 56: Reduce: relational_expression -> additive_expression
+Line 56: Reduce: equality_expression -> relational_expression
+Line 56: Reduce: logical_AND_expression -> equality_expression
+Line 56: Reduce: logical_OR_expression -> logical_AND_expression
+Line 56: Reduce: conditional_expression -> logical_OR_expression
+Line 56: Reduce: assignment_expression -> conditional_expression
+Line 56: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 56: Reduce: expression -> assignment_expression
+Line 56: Reduce: expression_opt -> expression
+Line 56: Reduce: expression_statement -> expression_opt ;
+Line 56: Reduce: statement -> expression_statement
+Line 56: Reduce: block_item -> statement
+Line 56: Reduce: block_item_list -> block_item
+Line 57: Reduce: block_item_list_opt -> block_item_list
+Line 57: Reduce: compound_statement -> begin block_item_list end
+Line 57: Reduce: statement -> compound_statement
+Line 59: Reduce: selection_statement -> if ( expression ) statement
+Line 59: Reduce: statement -> selection_statement
+Line 59: Reduce: block_item -> statement
+Line 59: Reduce: block_item_list -> block_item_list block_item
+Line 59: Reduce: primary_expression -> IDENTIFIER (m)
+Line 59: Reduce: postfix_expression -> primary_expression
+Line 59: Reduce: unary_expression -> postfix_expression
+Line 59: Reduce: multiplicative_expression -> unary_expression
+Line 59: Reduce: additive_expression -> multiplicative_expression
+Line 59: Reduce: relational_expression -> additive_expression
+Line 59: Reduce: primary_expression -> IDENTIFIER (n)
+Line 59: Reduce: postfix_expression -> primary_expression
+Line 59: Reduce: unary_expression -> postfix_expression
+Line 59: Reduce: multiplicative_expression -> unary_expression
+Line 59: Reduce: additive_expression -> multiplicative_expression
+Line 59: Reduce: relational_expression -> relational_expression >= additive_expression (gte op) 
+Line 59: Reduce: equality_expression -> relational_expression
+Line 59: Reduce: logical_AND_expression -> equality_expression
+Line 59: Reduce: logical_OR_expression -> logical_AND_expression
+Line 59: Reduce: conditional_expression -> logical_OR_expression
+Line 59: Reduce: assignment_expression -> conditional_expression
+Line 59: Reduce: expression -> assignment_expression
+Line 60: Reduce: primary_expression -> IDENTIFIER (p)
+Line 60: Reduce: postfix_expression -> primary_expression
+Line 60: Reduce: unary_expression -> postfix_expression
+Line 60: Reduce: primary_expression -> INTEGER_CONSTANT (4)
+Line 60: Reduce: postfix_expression -> primary_expression
+Line 60: Reduce: unary_expression -> postfix_expression
+Line 60: Reduce: multiplicative_expression -> unary_expression
+Line 60: Reduce: additive_expression -> multiplicative_expression
+Line 60: Reduce: relational_expression -> additive_expression
+Line 60: Reduce: equality_expression -> relational_expression
+Line 60: Reduce: logical_AND_expression -> equality_expression
+Line 60: Reduce: logical_OR_expression -> logical_AND_expression
+Line 60: Reduce: conditional_expression -> logical_OR_expression
+Line 60: Reduce: assignment_expression -> conditional_expression
+Line 60: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 60: Reduce: expression -> assignment_expression
+Line 60: Reduce: expression_opt -> expression
+Line 60: Reduce: expression_statement -> expression_opt ;
+Line 60: Reduce: statement -> expression_statement
+Line 60: Reduce: block_item -> statement
+Line 60: Reduce: block_item_list -> block_item
+Line 61: Reduce: block_item_list_opt -> block_item_list
+Line 61: Reduce: compound_statement -> begin block_item_list end
+Line 61: Reduce: statement -> compound_statement
+Line 64: Reduce: selection_statement -> if ( expression ) statement
+Line 64: Reduce: statement -> selection_statement
+Line 64: Reduce: block_item -> statement
+Line 64: Reduce: block_item_list -> block_item_list block_item
+Line 64: Reduce: primary_expression -> IDENTIFIER (m)
+Line 64: Reduce: postfix_expression -> primary_expression
+Line 64: Reduce: unary_expression -> postfix_expression
+Line 64: Reduce: multiplicative_expression -> unary_expression
+Line 64: Reduce: additive_expression -> multiplicative_expression
+Line 64: Reduce: relational_expression -> additive_expression
+Line 64: Reduce: equality_expression -> relational_expression
+Line 64: Reduce: primary_expression -> IDENTIFIER (n)
+Line 64: Reduce: postfix_expression -> primary_expression
+Line 64: Reduce: unary_expression -> postfix_expression
+Line 64: Reduce: multiplicative_expression -> unary_expression
+Line 64: Reduce: additive_expression -> multiplicative_expression
+Line 64: Reduce: relational_expression -> additive_expression
+Line 64: Reduce: equality_expression -> equality_expression == relational_expression
+Line 64: Reduce: logical_AND_expression -> equality_expression
+Line 64: Reduce: logical_OR_expression -> logical_AND_expression
+Line 64: Reduce: conditional_expression -> logical_OR_expression
+Line 64: Reduce: assignment_expression -> conditional_expression
+Line 64: Reduce: expression -> assignment_expression
+Line 65: Reduce: primary_expression -> IDENTIFIER (p)
+Line 65: Reduce: postfix_expression -> primary_expression
+Line 65: Reduce: unary_expression -> postfix_expression
+Line 65: Reduce: primary_expression -> INTEGER_CONSTANT (5)
+Line 65: Reduce: postfix_expression -> primary_expression
+Line 65: Reduce: unary_expression -> postfix_expression
+Line 65: Reduce: multiplicative_expression -> unary_expression
+Line 65: Reduce: additive_expression -> multiplicative_expression
+Line 65: Reduce: relational_expression -> additive_expression
+Line 65: Reduce: equality_expression -> relational_expression
+Line 65: Reduce: logical_AND_expression -> equality_expression
+Line 65: Reduce: logical_OR_expression -> logical_AND_expression
+Line 65: Reduce: conditional_expression -> logical_OR_expression
+Line 65: Reduce: assignment_expression -> conditional_expression
+Line 65: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 65: Reduce: expression -> assignment_expression
+Line 65: Reduce: expression_opt -> expression
+Line 65: Reduce: expression_statement -> expression_opt ;
+Line 65: Reduce: statement -> expression_statement
+Line 65: Reduce: block_item -> statement
+Line 65: Reduce: block_item_list -> block_item
+Line 66: Reduce: block_item_list_opt -> block_item_list
+Line 66: Reduce: compound_statement -> begin block_item_list end
+Line 66: Reduce: statement -> compound_statement
+Line 68: Reduce: selection_statement -> if ( expression ) statement
+Line 68: Reduce: statement -> selection_statement
+Line 68: Reduce: block_item -> statement
+Line 68: Reduce: block_item_list -> block_item_list block_item
+Line 68: Reduce: primary_expression -> IDENTIFIER (m)
+Line 68: Reduce: postfix_expression -> primary_expression
+Line 68: Reduce: unary_expression -> postfix_expression
+Line 68: Reduce: multiplicative_expression -> unary_expression
+Line 68: Reduce: additive_expression -> multiplicative_expression
+Line 68: Reduce: relational_expression -> additive_expression
+Line 68: Reduce: equality_expression -> relational_expression
+Line 68: Reduce: primary_expression -> IDENTIFIER (n)
+Line 68: Reduce: postfix_expression -> primary_expression
+Line 68: Reduce: unary_expression -> postfix_expression
+Line 68: Reduce: multiplicative_expression -> unary_expression
+Line 68: Reduce: additive_expression -> multiplicative_expression
+Line 68: Reduce: relational_expression -> additive_expression
+Line 68: Reduce: equality_expression -> equality_expression != relational_expression
+Line 68: Reduce: logical_AND_expression -> equality_expression
+Line 68: Reduce: logical_OR_expression -> logical_AND_expression
+Line 68: Reduce: conditional_expression -> logical_OR_expression
+Line 68: Reduce: assignment_expression -> conditional_expression
+Line 68: Reduce: expression -> assignment_expression
+Line 69: Reduce: primary_expression -> IDENTIFIER (p)
+Line 69: Reduce: postfix_expression -> primary_expression
+Line 69: Reduce: unary_expression -> postfix_expression
+Line 69: Reduce: primary_expression -> INTEGER_CONSTANT (6)
+Line 69: Reduce: postfix_expression -> primary_expression
+Line 69: Reduce: unary_expression -> postfix_expression
+Line 69: Reduce: multiplicative_expression -> unary_expression
+Line 69: Reduce: additive_expression -> multiplicative_expression
+Line 69: Reduce: relational_expression -> additive_expression
+Line 69: Reduce: equality_expression -> relational_expression
+Line 69: Reduce: logical_AND_expression -> equality_expression
+Line 69: Reduce: logical_OR_expression -> logical_AND_expression
+Line 69: Reduce: conditional_expression -> logical_OR_expression
+Line 69: Reduce: assignment_expression -> conditional_expression
+Line 69: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 69: Reduce: expression -> assignment_expression
+Line 69: Reduce: expression_opt -> expression
+Line 69: Reduce: expression_statement -> expression_opt ;
+Line 69: Reduce: statement -> expression_statement
+Line 69: Reduce: block_item -> statement
+Line 69: Reduce: block_item_list -> block_item
+Line 70: Reduce: block_item_list_opt -> block_item_list
+Line 70: Reduce: compound_statement -> begin block_item_list end
+Line 70: Reduce: statement -> compound_statement
+Line 73: Reduce: selection_statement -> if ( expression ) statement
+Line 73: Reduce: statement -> selection_statement
+Line 73: Reduce: block_item -> statement
+Line 73: Reduce: block_item_list -> block_item_list block_item
+Line 73: Reduce: primary_expression -> IDENTIFIER (m)
+Line 73: Reduce: postfix_expression -> primary_expression
+Line 73: Reduce: unary_expression -> postfix_expression
+Line 73: Reduce: multiplicative_expression -> unary_expression
+Line 73: Reduce: additive_expression -> multiplicative_expression
+Line 73: Reduce: relational_expression -> additive_expression
+Line 73: Reduce: primary_expression -> INTEGER_CONSTANT (0)
+Line 73: Reduce: postfix_expression -> primary_expression
+Line 73: Reduce: unary_expression -> postfix_expression
+Line 73: Reduce: multiplicative_expression -> unary_expression
+Line 73: Reduce: additive_expression -> multiplicative_expression
+Line 73: Reduce: relational_expression -> relational_expression > additive_expression (gt op) 
+Line 73: Reduce: equality_expression -> relational_expression
+Line 73: Reduce: logical_AND_expression -> equality_expression
+Line 73: Reduce: primary_expression -> IDENTIFIER (n)
+Line 73: Reduce: postfix_expression -> primary_expression
+Line 73: Reduce: unary_expression -> postfix_expression
+Line 73: Reduce: multiplicative_expression -> unary_expression
+Line 73: Reduce: additive_expression -> multiplicative_expression
+Line 73: Reduce: relational_expression -> additive_expression
+Line 73: Reduce: primary_expression -> INTEGER_CONSTANT (0)
+Line 73: Reduce: postfix_expression -> primary_expression
+Line 73: Reduce: unary_expression -> postfix_expression
+Line 73: Reduce: multiplicative_expression -> unary_expression
+Line 73: Reduce: additive_expression -> multiplicative_expression
+Line 73: Reduce: relational_expression -> relational_expression < additive_expression (lt op) 
+Line 73: Reduce: equality_expression -> relational_expression
+Line 73: Reduce: logical_AND_expression -> logical_AND_expression && equality_expression
+Line 73: Reduce: logical_OR_expression -> logical_AND_expression
+Line 73: Reduce: conditional_expression -> logical_OR_expression
+Line 73: Reduce: assignment_expression -> conditional_expression
+Line 73: Reduce: expression -> assignment_expression
+Line 74: Reduce: primary_expression -> IDENTIFIER (p)
+Line 74: Reduce: postfix_expression -> primary_expression
+Line 74: Reduce: unary_expression -> postfix_expression
+Line 74: Reduce: primary_expression -> INTEGER_CONSTANT (7)
+Line 74: Reduce: postfix_expression -> primary_expression
+Line 74: Reduce: unary_expression -> postfix_expression
+Line 74: Reduce: multiplicative_expression -> unary_expression
+Line 74: Reduce: additive_expression -> multiplicative_expression
+Line 74: Reduce: relational_expression -> additive_expression
+Line 74: Reduce: equality_expression -> relational_expression
+Line 74: Reduce: logical_AND_expression -> equality_expression
+Line 74: Reduce: logical_OR_expression -> logical_AND_expression
+Line 74: Reduce: conditional_expression -> logical_OR_expression
+Line 74: Reduce: assignment_expression -> conditional_expression
+Line 74: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 74: Reduce: expression -> assignment_expression
+Line 74: Reduce: expression_opt -> expression
+Line 74: Reduce: expression_statement -> expression_opt ;
+Line 74: Reduce: statement -> expression_statement
+Line 74: Reduce: block_item -> statement
+Line 74: Reduce: block_item_list -> block_item
+Line 75: Reduce: block_item_list_opt -> block_item_list
+Line 75: Reduce: compound_statement -> begin block_item_list end
+Line 75: Reduce: statement -> compound_statement
+Line 77: Reduce: selection_statement -> if ( expression ) statement
+Line 77: Reduce: statement -> selection_statement
+Line 77: Reduce: block_item -> statement
+Line 77: Reduce: block_item_list -> block_item_list block_item
+Line 77: Reduce: primary_expression -> IDENTIFIER (m)
+Line 77: Reduce: postfix_expression -> primary_expression
+Line 77: Reduce: unary_expression -> postfix_expression
+Line 77: Reduce: multiplicative_expression -> unary_expression
+Line 77: Reduce: additive_expression -> multiplicative_expression
+Line 77: Reduce: relational_expression -> additive_expression
+Line 77: Reduce: primary_expression -> INTEGER_CONSTANT (70)
+Line 77: Reduce: postfix_expression -> primary_expression
+Line 77: Reduce: unary_expression -> postfix_expression
+Line 77: Reduce: multiplicative_expression -> unary_expression
+Line 77: Reduce: additive_expression -> multiplicative_expression
+Line 77: Reduce: relational_expression -> relational_expression < additive_expression (lt op) 
+Line 77: Reduce: equality_expression -> relational_expression
+Line 77: Reduce: logical_AND_expression -> equality_expression
+Line 77: Reduce: logical_OR_expression -> logical_AND_expression
+Line 77: Reduce: primary_expression -> IDENTIFIER (n)
+Line 77: Reduce: postfix_expression -> primary_expression
+Line 77: Reduce: unary_expression -> postfix_expression
+Line 77: Reduce: multiplicative_expression -> unary_expression
+Line 77: Reduce: additive_expression -> multiplicative_expression
+Line 77: Reduce: relational_expression -> additive_expression
+Line 77: Reduce: primary_expression -> INTEGER_CONSTANT (2)
+Line 77: Reduce: postfix_expression -> primary_expression
+Line 77: Reduce: unary_expression -> postfix_expression
+Line 77: Reduce: multiplicative_expression -> unary_expression
+Line 77: Reduce: additive_expression -> multiplicative_expression
+Line 77: Reduce: relational_expression -> relational_expression > additive_expression (gt op) 
+Line 77: Reduce: equality_expression -> relational_expression
+Line 77: Reduce: logical_AND_expression -> equality_expression
+Line 77: Reduce: logical_OR_expression -> logical_OR_expression || logical_AND_expression
+Line 77: Reduce: conditional_expression -> logical_OR_expression
+Line 77: Reduce: assignment_expression -> conditional_expression
+Line 77: Reduce: expression -> assignment_expression
+Line 78: Reduce: primary_expression -> IDENTIFIER (p)
+Line 78: Reduce: postfix_expression -> primary_expression
+Line 78: Reduce: unary_expression -> postfix_expression
+Line 78: Reduce: primary_expression -> INTEGER_CONSTANT (8)
+Line 78: Reduce: postfix_expression -> primary_expression
+Line 78: Reduce: unary_expression -> postfix_expression
+Line 78: Reduce: multiplicative_expression -> unary_expression
+Line 78: Reduce: additive_expression -> multiplicative_expression
+Line 78: Reduce: relational_expression -> additive_expression
+Line 78: Reduce: equality_expression -> relational_expression
+Line 78: Reduce: logical_AND_expression -> equality_expression
+Line 78: Reduce: logical_OR_expression -> logical_AND_expression
+Line 78: Reduce: conditional_expression -> logical_OR_expression
+Line 78: Reduce: assignment_expression -> conditional_expression
+Line 78: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 78: Reduce: expression -> assignment_expression
+Line 78: Reduce: expression_opt -> expression
+Line 78: Reduce: expression_statement -> expression_opt ;
+Line 78: Reduce: statement -> expression_statement
+Line 78: Reduce: block_item -> statement
+Line 78: Reduce: block_item_list -> block_item
+Line 79: Reduce: block_item_list_opt -> block_item_list
+Line 79: Reduce: compound_statement -> begin block_item_list end
+Line 79: Reduce: statement -> compound_statement
+Line 81: Reduce: selection_statement -> if ( expression ) statement
+Line 81: Reduce: statement -> selection_statement
+Line 81: Reduce: block_item -> statement
+Line 81: Reduce: block_item_list -> block_item_list block_item
+Line 81: Reduce: block_item_list_opt -> block_item_list
+Line 81: Reduce: compound_statement -> begin block_item_list end
+Line 81: Reduce: function_definition -> type_specifier function_declarator compound_statement
+Line 84: Reduce: type_specifier -> void
+Line 84: Reduce: function_declarator -> identifier ( )
+Line 86: Reduce: type_specifier -> integer
+Line 86: Reduce: direct_declarator -> IDENTIFIER (x)
+Line 86: Reduce: declarator -> direct_declarator
+Line 86: Reduce: init_declarator -> declarator
+Line 86: Reduce: declaration -> type_specifier init_declarator ;
+Line 86: Reduce: block_item -> declaration
+Line 86: Reduce: block_item_list -> block_item
+Line 87: Reduce: type_specifier -> integer
+Line 87: Reduce: direct_declarator -> IDENTIFIER (y)
+Line 87: Reduce: declarator -> direct_declarator
+Line 87: Reduce: init_declarator -> declarator
+Line 87: Reduce: declaration -> type_specifier init_declarator ;
+Line 87: Reduce: block_item -> declaration
+Line 87: Reduce: block_item_list -> block_item_list block_item
+Line 88: Reduce: type_specifier -> char
+Line 88: Reduce: direct_declarator -> IDENTIFIER (c)
+Line 88: Reduce: declarator -> direct_declarator
+Line 88: Reduce: init_declarator -> declarator
+Line 88: Reduce: declaration -> type_specifier init_declarator ;
+Line 88: Reduce: block_item -> declaration
+Line 88: Reduce: block_item_list -> block_item_list block_item
+Line 89: Reduce: type_specifier -> integer
+Line 89: Reduce: direct_declarator -> IDENTIFIER [ INTEGER_CONSTANT ]
+Line 89: Reduce: declarator -> direct_declarator
+Line 89: Reduce: init_declarator -> declarator
+Line 89: Reduce: declaration -> type_specifier init_declarator ;
+Line 89: Reduce: block_item -> declaration
+Line 89: Reduce: block_item_list -> block_item_list block_item
+Line 90: Reduce: type_specifier -> integer
+Line 90: Reduce: pointer -> *
+Line 90: Reduce: direct_declarator -> IDENTIFIER (ptr)
+Line 90: Reduce: declarator -> pointer direct_declarator
+Line 90: Reduce: init_declarator -> declarator
+Line 90: Reduce: declaration -> type_specifier init_declarator ;
+Line 90: Reduce: block_item -> declaration
+Line 90: Reduce: block_item_list -> block_item_list block_item
+Line 93: Reduce: primary_expression -> IDENTIFIER (x)
+Line 93: Reduce: postfix_expression -> primary_expression
+Line 93: Reduce: unary_expression -> postfix_expression
+Line 93: Reduce: primary_expression -> INTEGER_CONSTANT (42)
+Line 93: Reduce: postfix_expression -> primary_expression
+Line 93: Reduce: unary_expression -> postfix_expression
+Line 93: Reduce: multiplicative_expression -> unary_expression
+Line 93: Reduce: additive_expression -> multiplicative_expression
+Line 93: Reduce: relational_expression -> additive_expression
+Line 93: Reduce: equality_expression -> relational_expression
+Line 93: Reduce: logical_AND_expression -> equality_expression
+Line 93: Reduce: logical_OR_expression -> logical_AND_expression
+Line 93: Reduce: conditional_expression -> logical_OR_expression
+Line 93: Reduce: assignment_expression -> conditional_expression
+Line 93: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 93: Reduce: expression -> assignment_expression
+Line 93: Reduce: expression_opt -> expression
+Line 93: Reduce: expression_statement -> expression_opt ;
+Line 93: Reduce: statement -> expression_statement
+Line 93: Reduce: block_item -> statement
+Line 93: Reduce: block_item_list -> block_item_list block_item
+Line 96: Reduce: primary_expression -> IDENTIFIER (printNum)
+Line 96: Reduce: postfix_expression -> primary_expression
+Line 96: Reduce: primary_expression -> IDENTIFIER (x)
+Line 96: Reduce: postfix_expression -> primary_expression
+Line 96: Reduce: unary_expression -> postfix_expression
+Line 96: Reduce: multiplicative_expression -> unary_expression
+Line 96: Reduce: additive_expression -> multiplicative_expression
+Line 96: Reduce: relational_expression -> additive_expression
+Line 96: Reduce: equality_expression -> relational_expression
+Line 96: Reduce: logical_AND_expression -> equality_expression
+Line 96: Reduce: logical_OR_expression -> logical_AND_expression
+Line 96: Reduce: conditional_expression -> logical_OR_expression
+Line 96: Reduce: assignment_expression -> conditional_expression
+Line 96: Reduce: argument_expression_list -> assignment_expression
+Line 96: Reduce: postfix_expression -> postfix_expression ( argument_expression_list )
+Line 96: Reduce: unary_expression -> postfix_expression
+Line 96: Reduce: multiplicative_expression -> unary_expression
+Line 96: Reduce: additive_expression -> multiplicative_expression
+Line 96: Reduce: relational_expression -> additive_expression
+Line 96: Reduce: equality_expression -> relational_expression
+Line 96: Reduce: logical_AND_expression -> equality_expression
+Line 96: Reduce: logical_OR_expression -> logical_AND_expression
+Line 96: Reduce: conditional_expression -> logical_OR_expression
+Line 96: Reduce: assignment_expression -> conditional_expression
+Line 96: Reduce: expression -> assignment_expression
+Line 96: Reduce: expression_opt -> expression
+Line 96: Reduce: expression_statement -> expression_opt ;
+Line 96: Reduce: statement -> expression_statement
+Line 96: Reduce: block_item -> statement
+Line 96: Reduce: block_item_list -> block_item_list block_item
+Line 98: Reduce: primary_expression -> IDENTIFIER (y)
+Line 98: Reduce: postfix_expression -> primary_expression
+Line 98: Reduce: unary_expression -> postfix_expression
+Line 98: Reduce: primary_expression -> INTEGER_CONSTANT (3)
+Line 98: Reduce: postfix_expression -> primary_expression
+Line 98: Reduce: unary_expression -> postfix_expression
+Line 98: Reduce: multiplicative_expression -> unary_expression
+Line 98: Reduce: additive_expression -> multiplicative_expression
+Line 98: Reduce: relational_expression -> additive_expression
+Line 98: Reduce: equality_expression -> relational_expression
+Line 98: Reduce: logical_AND_expression -> equality_expression
+Line 98: Reduce: logical_OR_expression -> logical_AND_expression
+Line 98: Reduce: conditional_expression -> logical_OR_expression
+Line 98: Reduce: assignment_expression -> conditional_expression
+Line 98: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 98: Reduce: expression -> assignment_expression
+Line 98: Reduce: expression_opt -> expression
+Line 98: Reduce: expression_statement -> expression_opt ;
+Line 98: Reduce: statement -> expression_statement
+Line 98: Reduce: block_item -> statement
+Line 98: Reduce: block_item_list -> block_item_list block_item
+Line 99: Reduce: primary_expression -> IDENTIFIER (c)
+Line 99: Reduce: postfix_expression -> primary_expression
+Line 99: Reduce: unary_expression -> postfix_expression
+Line 99: Reduce: primary_expression -> CHARACTER_CONSTANT (A)
+Line 99: Reduce: postfix_expression -> primary_expression
+Line 99: Reduce: unary_expression -> postfix_expression
+Line 99: Reduce: multiplicative_expression -> unary_expression
+Line 99: Reduce: additive_expression -> multiplicative_expression
+Line 99: Reduce: relational_expression -> additive_expression
+Line 99: Reduce: equality_expression -> relational_expression
+Line 99: Reduce: logical_AND_expression -> equality_expression
+Line 99: Reduce: logical_OR_expression -> logical_AND_expression
+Line 99: Reduce: conditional_expression -> logical_OR_expression
+Line 99: Reduce: assignment_expression -> conditional_expression
+Line 99: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 99: Reduce: expression -> assignment_expression
+Line 99: Reduce: expression_opt -> expression
+Line 99: Reduce: expression_statement -> expression_opt ;
+Line 99: Reduce: statement -> expression_statement
+Line 99: Reduce: block_item -> statement
+Line 99: Reduce: block_item_list -> block_item_list block_item
+Line 105: Reduce: primary_expression -> IDENTIFIER (x)
+Line 105: Reduce: postfix_expression -> primary_expression
+Line 105: Reduce: unary_expression -> postfix_expression
+Line 105: Reduce: primary_expression -> INTEGER_CONSTANT (5)
+Line 105: Reduce: postfix_expression -> primary_expression
+Line 105: Reduce: unary_expression -> postfix_expression
+Line 105: Reduce: multiplicative_expression -> unary_expression
+Line 105: Reduce: additive_expression -> multiplicative_expression
+Line 105: Reduce: primary_expression -> INTEGER_CONSTANT (3)
+Line 105: Reduce: postfix_expression -> primary_expression
+Line 105: Reduce: unary_expression -> postfix_expression
+Line 105: Reduce: multiplicative_expression -> unary_expression
+Line 105: Reduce: primary_expression -> INTEGER_CONSTANT (2)
+Line 105: Reduce: postfix_expression -> primary_expression
+Line 105: Reduce: unary_expression -> postfix_expression
+Line 105: Reduce: multiplicative_expression -> multiplicative_expression * unary_expression (mult op) 
+Line 105: Reduce: additive_expression -> additive_expression + multiplicative_expression (addn op) 
+Line 105: Reduce: relational_expression -> additive_expression
+Line 105: Reduce: equality_expression -> relational_expression
+Line 105: Reduce: logical_AND_expression -> equality_expression
+Line 105: Reduce: logical_OR_expression -> logical_AND_expression
+Line 105: Reduce: conditional_expression -> logical_OR_expression
+Line 105: Reduce: assignment_expression -> conditional_expression
+Line 105: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 105: Reduce: expression -> assignment_expression
+Line 105: Reduce: expression_opt -> expression
+Line 105: Reduce: expression_statement -> expression_opt ;
+Line 105: Reduce: statement -> expression_statement
+Line 105: Reduce: block_item -> statement
+Line 105: Reduce: block_item_list -> block_item_list block_item
+Line 106: Reduce: primary_expression -> IDENTIFIER (y)
+Line 106: Reduce: postfix_expression -> primary_expression
+Line 106: Reduce: unary_expression -> postfix_expression
+Line 106: Reduce: primary_expression -> IDENTIFIER (x)
+Line 106: Reduce: postfix_expression -> primary_expression
+Line 106: Reduce: unary_expression -> postfix_expression
+Line 106: Reduce: multiplicative_expression -> unary_expression
+Line 106: Reduce: additive_expression -> multiplicative_expression
+Line 106: Reduce: primary_expression -> INTEGER_CONSTANT (1)
+Line 106: Reduce: postfix_expression -> primary_expression
+Line 106: Reduce: unary_expression -> postfix_expression
+Line 106: Reduce: multiplicative_expression -> unary_expression
+Line 106: Reduce: additive_expression -> additive_expression - multiplicative_expression (sub op) 
+Line 106: Reduce: relational_expression -> additive_expression
+Line 106: Reduce: equality_expression -> relational_expression
+Line 106: Reduce: logical_AND_expression -> equality_expression
+Line 106: Reduce: logical_OR_expression -> logical_AND_expression
+Line 106: Reduce: conditional_expression -> logical_OR_expression
+Line 106: Reduce: assignment_expression -> conditional_expression
+Line 106: Reduce: expression -> assignment_expression
+Line 106: Reduce: primary_expression -> ( expression )
+Line 106: Reduce: postfix_expression -> primary_expression
+Line 106: Reduce: unary_expression -> postfix_expression
+Line 106: Reduce: multiplicative_expression -> unary_expression
+Line 106: Reduce: primary_expression -> INTEGER_CONSTANT (3)
+Line 106: Reduce: postfix_expression -> primary_expression
+Line 106: Reduce: unary_expression -> postfix_expression
+Line 106: Reduce: multiplicative_expression -> multiplicative_expression / unary_expression (div op) 
+Line 106: Reduce: additive_expression -> multiplicative_expression
+Line 106: Reduce: relational_expression -> additive_expression
+Line 106: Reduce: equality_expression -> relational_expression
+Line 106: Reduce: logical_AND_expression -> equality_expression
+Line 106: Reduce: logical_OR_expression -> logical_AND_expression
+Line 106: Reduce: conditional_expression -> logical_OR_expression
+Line 106: Reduce: assignment_expression -> conditional_expression
+Line 106: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 106: Reduce: expression -> assignment_expression
+Line 106: Reduce: expression_opt -> expression
+Line 106: Reduce: expression_statement -> expression_opt ;
+Line 106: Reduce: statement -> expression_statement
+Line 106: Reduce: block_item -> statement
+Line 106: Reduce: block_item_list -> block_item_list block_item
+Line 109: Reduce: primary_expression -> IDENTIFIER (ptr)
+Line 109: Reduce: postfix_expression -> primary_expression
+Line 109: Reduce: unary_expression -> postfix_expression
+Line 109: Reduce: unary_operator -> & (address op) 
+Line 109: Reduce: primary_expression -> IDENTIFIER (x)
+Line 109: Reduce: postfix_expression -> primary_expression
+Line 109: Reduce: unary_expression -> postfix_expression
+Line 109: Reduce: unary_expression -> unary_operator unary_expression
+Line 109: Reduce: multiplicative_expression -> unary_expression
+Line 109: Reduce: additive_expression -> multiplicative_expression
+Line 109: Reduce: relational_expression -> additive_expression
+Line 109: Reduce: equality_expression -> relational_expression
+Line 109: Reduce: logical_AND_expression -> equality_expression
+Line 109: Reduce: logical_OR_expression -> logical_AND_expression
+Line 109: Reduce: conditional_expression -> logical_OR_expression
+Line 109: Reduce: assignment_expression -> conditional_expression
+Line 109: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 109: Reduce: expression -> assignment_expression
+Line 109: Reduce: expression_opt -> expression
+Line 109: Reduce: expression_statement -> expression_opt ;
+Line 109: Reduce: statement -> expression_statement
+Line 109: Reduce: block_item -> statement
+Line 109: Reduce: block_item_list -> block_item_list block_item
+Line 110: Reduce: primary_expression -> IDENTIFIER (y)
+Line 110: Reduce: postfix_expression -> primary_expression
+Line 110: Reduce: unary_expression -> postfix_expression
+Line 110: Reduce: unary_operator -> * (dereference op) 
+Line 110: Reduce: primary_expression -> IDENTIFIER (ptr)
+Line 110: Reduce: postfix_expression -> primary_expression
+Line 110: Reduce: unary_expression -> postfix_expression
+Line 110: Reduce: unary_expression -> unary_operator unary_expression
+Line 110: Reduce: multiplicative_expression -> unary_expression
+Line 110: Reduce: additive_expression -> multiplicative_expression
+Line 110: Reduce: relational_expression -> additive_expression
+Line 110: Reduce: equality_expression -> relational_expression
+Line 110: Reduce: logical_AND_expression -> equality_expression
+Line 110: Reduce: logical_OR_expression -> logical_AND_expression
+Line 110: Reduce: conditional_expression -> logical_OR_expression
+Line 110: Reduce: assignment_expression -> conditional_expression
+Line 110: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 110: Reduce: expression -> assignment_expression
+Line 110: Reduce: expression_opt -> expression
+Line 110: Reduce: expression_statement -> expression_opt ;
+Line 110: Reduce: statement -> expression_statement
+Line 110: Reduce: block_item -> statement
+Line 110: Reduce: block_item_list -> block_item_list block_item
+Line 114: Reduce: type_specifier -> integer
+Line 114: Reduce: direct_declarator -> IDENTIFIER (flag)
+Line 114: Reduce: declarator -> direct_declarator
+Line 114: Reduce: init_declarator -> declarator
+Line 114: Reduce: declaration -> type_specifier init_declarator ;
+Line 114: Reduce: block_item -> declaration
+Line 114: Reduce: block_item_list -> block_item_list block_item
+Line 115: Reduce: type_specifier -> integer
+Line 115: Reduce: direct_declarator -> IDENTIFIER (i)
+Line 115: Reduce: declarator -> direct_declarator
+Line 115: Reduce: init_declarator -> declarator
+Line 115: Reduce: declaration -> type_specifier init_declarator ;
+Line 115: Reduce: block_item -> declaration
+Line 115: Reduce: block_item_list -> block_item_list block_item
+Line 117: Reduce: primary_expression -> IDENTIFIER (i)
+Line 117: Reduce: postfix_expression -> primary_expression
+Line 117: Reduce: unary_expression -> postfix_expression
+Line 117: Reduce: primary_expression -> INTEGER_CONSTANT (67)
+Line 117: Reduce: postfix_expression -> primary_expression
+Line 117: Reduce: unary_expression -> postfix_expression
+Line 117: Reduce: multiplicative_expression -> unary_expression
+Line 117: Reduce: additive_expression -> multiplicative_expression
+Line 117: Reduce: relational_expression -> additive_expression
+Line 117: Reduce: equality_expression -> relational_expression
+Line 117: Reduce: logical_AND_expression -> equality_expression
+Line 117: Reduce: logical_OR_expression -> logical_AND_expression
+Line 117: Reduce: conditional_expression -> logical_OR_expression
+Line 117: Reduce: assignment_expression -> conditional_expression
+Line 117: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 117: Reduce: expression -> assignment_expression
+Line 117: Reduce: expression_opt -> expression
+Line 117: Reduce: expression_statement -> expression_opt ;
+Line 117: Reduce: statement -> expression_statement
+Line 117: Reduce: block_item -> statement
+Line 117: Reduce: block_item_list -> block_item_list block_item
+Line 118: Reduce: type_specifier -> integer
+Line 118: Reduce: direct_declarator -> IDENTIFIER (j)
+Line 118: Reduce: declarator -> direct_declarator
+Line 118: Reduce: init_declarator -> declarator
+Line 118: Reduce: declaration -> type_specifier init_declarator ;
+Line 118: Reduce: block_item -> declaration
+Line 118: Reduce: block_item_list -> block_item_list block_item
+Line 121: Reduce: primary_expression -> IDENTIFIER (i)
+Line 121: Reduce: postfix_expression -> primary_expression
+Line 121: Reduce: unary_expression -> postfix_expression
+Line 121: Reduce: multiplicative_expression -> unary_expression
+Line 121: Reduce: additive_expression -> multiplicative_expression
+Line 121: Reduce: relational_expression -> additive_expression
+Line 121: Reduce: primary_expression -> INTEGER_CONSTANT (0)
+Line 121: Reduce: postfix_expression -> primary_expression
+Line 121: Reduce: unary_expression -> postfix_expression
+Line 121: Reduce: multiplicative_expression -> unary_expression
+Line 121: Reduce: additive_expression -> multiplicative_expression
+Line 121: Reduce: relational_expression -> relational_expression > additive_expression (gt op) 
+Line 121: Reduce: equality_expression -> relational_expression
+Line 121: Reduce: logical_AND_expression -> equality_expression
+Line 121: Reduce: logical_OR_expression -> logical_AND_expression
+Line 121: Reduce: conditional_expression -> logical_OR_expression
+Line 121: Reduce: assignment_expression -> conditional_expression
+Line 121: Reduce: expression -> assignment_expression
+Line 122: Reduce: primary_expression -> IDENTIFIER (i)
+Line 122: Reduce: postfix_expression -> primary_expression
+Line 122: Reduce: unary_expression -> postfix_expression
+Line 122: Reduce: primary_expression -> INTEGER_CONSTANT (78)
+Line 122: Reduce: postfix_expression -> primary_expression
+Line 122: Reduce: unary_expression -> postfix_expression
+Line 122: Reduce: multiplicative_expression -> unary_expression
+Line 122: Reduce: additive_expression -> multiplicative_expression
+Line 122: Reduce: relational_expression -> additive_expression
+Line 122: Reduce: equality_expression -> relational_expression
+Line 122: Reduce: logical_AND_expression -> equality_expression
+Line 122: Reduce: logical_OR_expression -> logical_AND_expression
+Line 122: Reduce: conditional_expression -> logical_OR_expression
+Line 122: Reduce: assignment_expression -> conditional_expression
+Line 122: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 122: Reduce: expression -> assignment_expression
+Line 122: Reduce: expression_opt -> expression
+Line 122: Reduce: expression_statement -> expression_opt ;
+Line 122: Reduce: statement -> expression_statement
+Line 122: Reduce: block_item -> statement
+Line 122: Reduce: block_item_list -> block_item
+Line 123: Reduce: type_specifier -> integer
+Line 123: Reduce: direct_declarator -> IDENTIFIER [ INTEGER_CONSTANT ]
+Line 123: Reduce: declarator -> direct_declarator
+Line 123: Reduce: init_declarator -> declarator
+Line 123: Reduce: declaration -> type_specifier init_declarator ;
+Line 123: Reduce: block_item -> declaration
+Line 123: Reduce: block_item_list -> block_item_list block_item
+Line 124: Reduce: primary_expression -> IDENTIFIER (i)
+Line 124: Reduce: postfix_expression -> primary_expression
+Line 124: Reduce: unary_expression -> postfix_expression
+Line 124: Reduce: multiplicative_expression -> unary_expression
+Line 124: Reduce: additive_expression -> multiplicative_expression
+Line 124: Reduce: relational_expression -> additive_expression
+Line 124: Reduce: primary_expression -> INTEGER_CONSTANT (70)
+Line 124: Reduce: postfix_expression -> primary_expression
+Line 124: Reduce: unary_expression -> postfix_expression
+Line 124: Reduce: multiplicative_expression -> unary_expression
+Line 124: Reduce: additive_expression -> multiplicative_expression
+Line 124: Reduce: relational_expression -> relational_expression < additive_expression (lt op) 
+Line 124: Reduce: equality_expression -> relational_expression
+Line 124: Reduce: logical_AND_expression -> equality_expression
+Line 124: Reduce: logical_OR_expression -> logical_AND_expression
+Line 124: Reduce: conditional_expression -> logical_OR_expression
+Line 124: Reduce: assignment_expression -> conditional_expression
+Line 124: Reduce: expression -> assignment_expression
+Line 125: Reduce: type_specifier -> integer
+Line 125: Reduce: direct_declarator -> IDENTIFIER (retires)
+Line 125: Reduce: declarator -> direct_declarator
+Line 125: Reduce: init_declarator -> declarator
+Line 125: Reduce: declaration -> type_specifier init_declarator ;
+Line 125: Reduce: block_item -> declaration
+Line 125: Reduce: block_item_list -> block_item
+Line 126: Reduce: primary_expression -> IDENTIFIER (retires)
+Line 126: Reduce: postfix_expression -> primary_expression
+Line 126: Reduce: unary_expression -> postfix_expression
+Line 126: Reduce: primary_expression -> INTEGER_CONSTANT (76)
+Line 126: Reduce: postfix_expression -> primary_expression
+Line 126: Reduce: unary_expression -> postfix_expression
+Line 126: Reduce: multiplicative_expression -> unary_expression
+Line 126: Reduce: additive_expression -> multiplicative_expression
+Line 126: Reduce: relational_expression -> additive_expression
+Line 126: Reduce: equality_expression -> relational_expression
+Line 126: Reduce: logical_AND_expression -> equality_expression
+Line 126: Reduce: logical_OR_expression -> logical_AND_expression
+Line 126: Reduce: conditional_expression -> logical_OR_expression
+Line 126: Reduce: assignment_expression -> conditional_expression
+Line 126: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 126: Reduce: expression -> assignment_expression
+Line 126: Reduce: expression_opt -> expression
+Line 126: Reduce: expression_statement -> expression_opt ;
+Line 126: Reduce: statement -> expression_statement
+Line 126: Reduce: block_item -> statement
+Line 126: Reduce: block_item_list -> block_item_list block_item
+Line 127: Reduce: block_item_list_opt -> block_item_list
+Line 127: Reduce: compound_statement -> begin block_item_list end
+Line 127: Reduce: statement -> compound_statement
+Line 128: Reduce: selection_statement -> if ( expression ) statement
+Line 128: Reduce: statement -> selection_statement
+Line 128: Reduce: block_item -> statement
+Line 128: Reduce: block_item_list -> block_item_list block_item
+Line 128: Reduce: block_item_list_opt -> block_item_list
+Line 128: Reduce: compound_statement -> begin block_item_list end
+Line 128: Reduce: statement -> compound_statement
+Line 129: Reduce: selection_statement -> if ( expression ) statement
+Line 129: Reduce: statement -> selection_statement
+Line 129: Reduce: block_item -> statement
+Line 129: Reduce: block_item_list -> block_item_list block_item
+Line 129: Reduce: expression_opt -> empty
+Line 129: Reduce: primary_expression -> IDENTIFIER (x)
+Line 129: Reduce: postfix_expression -> primary_expression
+Line 129: Reduce: unary_expression -> postfix_expression
+Line 129: Reduce: multiplicative_expression -> unary_expression
+Line 129: Reduce: additive_expression -> multiplicative_expression
+Line 129: Reduce: relational_expression -> additive_expression
+Line 129: Reduce: primary_expression -> INTEGER_CONSTANT (10)
+Line 129: Reduce: postfix_expression -> primary_expression
+Line 129: Reduce: unary_expression -> postfix_expression
+Line 129: Reduce: multiplicative_expression -> unary_expression
+Line 129: Reduce: additive_expression -> multiplicative_expression
+Line 129: Reduce: relational_expression -> relational_expression < additive_expression (lt op) 
+Line 129: Reduce: equality_expression -> relational_expression
+Line 129: Reduce: logical_AND_expression -> equality_expression
+Line 129: Reduce: logical_OR_expression -> logical_AND_expression
+Line 129: Reduce: conditional_expression -> logical_OR_expression
+Line 129: Reduce: assignment_expression -> conditional_expression
+Line 129: Reduce: expression -> assignment_expression
+Line 129: Reduce: expression_opt -> expression
+Line 129: Reduce: primary_expression -> IDENTIFIER (x)
+Line 129: Reduce: postfix_expression -> primary_expression
+Line 129: Reduce: unary_expression -> postfix_expression
+Line 129: Reduce: primary_expression -> IDENTIFIER (x)
+Line 129: Reduce: postfix_expression -> primary_expression
+Line 129: Reduce: unary_expression -> postfix_expression
+Line 129: Reduce: multiplicative_expression -> unary_expression
+Line 129: Reduce: additive_expression -> multiplicative_expression
+Line 129: Reduce: primary_expression -> INTEGER_CONSTANT (2)
+Line 129: Reduce: postfix_expression -> primary_expression
+Line 129: Reduce: unary_expression -> postfix_expression
+Line 129: Reduce: multiplicative_expression -> unary_expression
+Line 129: Reduce: additive_expression -> additive_expression + multiplicative_expression (addn op) 
+Line 129: Reduce: relational_expression -> additive_expression
+Line 129: Reduce: equality_expression -> relational_expression
+Line 129: Reduce: logical_AND_expression -> equality_expression
+Line 129: Reduce: logical_OR_expression -> logical_AND_expression
+Line 129: Reduce: conditional_expression -> logical_OR_expression
+Line 129: Reduce: assignment_expression -> conditional_expression
+Line 129: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 129: Reduce: expression -> assignment_expression
+Line 129: Reduce: expression_opt -> expression
+Line 130: Reduce: type_specifier -> integer
+Line 130: Reduce: direct_declarator -> IDENTIFIER (q)
+Line 130: Reduce: declarator -> direct_declarator
+Line 130: Reduce: init_declarator -> declarator
+Line 130: Reduce: declaration -> type_specifier init_declarator ;
+Line 130: Reduce: block_item -> declaration
+Line 130: Reduce: block_item_list -> block_item
+Line 131: Reduce: primary_expression -> IDENTIFIER (q)
+Line 131: Reduce: postfix_expression -> primary_expression
+Line 131: Reduce: unary_expression -> postfix_expression
+Line 131: Reduce: primary_expression -> IDENTIFIER (x)
+Line 131: Reduce: postfix_expression -> primary_expression
+Line 131: Reduce: unary_expression -> postfix_expression
+Line 131: Reduce: multiplicative_expression -> unary_expression
+Line 131: Reduce: primary_expression -> INTEGER_CONSTANT (2)
+Line 131: Reduce: postfix_expression -> primary_expression
+Line 131: Reduce: unary_expression -> postfix_expression
+Line 131: Reduce: multiplicative_expression -> multiplicative_expression * unary_expression (mult op) 
+Line 131: Reduce: additive_expression -> multiplicative_expression
+Line 131: Reduce: relational_expression -> additive_expression
+Line 131: Reduce: equality_expression -> relational_expression
+Line 131: Reduce: logical_AND_expression -> equality_expression
+Line 131: Reduce: logical_OR_expression -> logical_AND_expression
+Line 131: Reduce: conditional_expression -> logical_OR_expression
+Line 131: Reduce: assignment_expression -> conditional_expression
+Line 131: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 131: Reduce: expression -> assignment_expression
+Line 131: Reduce: expression_opt -> expression
+Line 131: Reduce: expression_statement -> expression_opt ;
+Line 131: Reduce: statement -> expression_statement
+Line 131: Reduce: block_item -> statement
+Line 131: Reduce: block_item_list -> block_item_list block_item
+Line 132: Reduce: primary_expression -> IDENTIFIER (arr)
+Line 132: Reduce: postfix_expression -> primary_expression
+Line 132: Reduce: primary_expression -> IDENTIFIER (x)
+Line 132: Reduce: postfix_expression -> primary_expression
+Line 132: Reduce: unary_expression -> postfix_expression
+Line 132: Reduce: multiplicative_expression -> unary_expression
+Line 132: Reduce: additive_expression -> multiplicative_expression
+Line 132: Reduce: relational_expression -> additive_expression
+Line 132: Reduce: equality_expression -> relational_expression
+Line 132: Reduce: logical_AND_expression -> equality_expression
+Line 132: Reduce: logical_OR_expression -> logical_AND_expression
+Line 132: Reduce: conditional_expression -> logical_OR_expression
+Line 132: Reduce: assignment_expression -> conditional_expression
+Line 132: Reduce: expression -> assignment_expression
+Line 132: Reduce: postfix_expression -> postfix_expression [ expression ]
+Line 132: Reduce: unary_expression -> postfix_expression
+Line 132: Reduce: primary_expression -> IDENTIFIER (q)
+Line 132: Reduce: postfix_expression -> primary_expression
+Line 132: Reduce: unary_expression -> postfix_expression
+Line 132: Reduce: multiplicative_expression -> unary_expression
+Line 132: Reduce: additive_expression -> multiplicative_expression
+Line 132: Reduce: relational_expression -> additive_expression
+Line 132: Reduce: equality_expression -> relational_expression
+Line 132: Reduce: logical_AND_expression -> equality_expression
+Line 132: Reduce: logical_OR_expression -> logical_AND_expression
+Line 132: Reduce: conditional_expression -> logical_OR_expression
+Line 132: Reduce: assignment_expression -> conditional_expression
+Line 132: Reduce: assignment_expression -> unary_expression = assignment_expression
+Line 132: Reduce: expression -> assignment_expression
+Line 132: Reduce: expression_opt -> expression
+Line 132: Reduce: expression_statement -> expression_opt ;
+Line 132: Reduce: statement -> expression_statement
+Line 132: Reduce: block_item -> statement
+Line 132: Reduce: block_item_list -> block_item_list block_item
+Line 133: Reduce: block_item_list_opt -> block_item_list
+Line 133: Reduce: compound_statement -> begin block_item_list end
+Line 133: Reduce: statement -> compound_statement
+Line 133: Reduce: iteration_statement -> for ( expression_opt ; expression_opt ; expression_opt ) statement
+Line 133: Reduce: statement -> iteration_statement
+Line 133: Reduce: block_item -> statement
+Line 133: Reduce: block_item_list -> block_item_list block_item
+Line 134: Reduce: primary_expression -> INTEGER_CONSTANT (0)
+Line 134: Reduce: postfix_expression -> primary_expression
+Line 134: Reduce: unary_expression -> postfix_expression
+Line 134: Reduce: multiplicative_expression -> unary_expression
+Line 134: Reduce: additive_expression -> multiplicative_expression
+Line 134: Reduce: relational_expression -> additive_expression
+Line 134: Reduce: equality_expression -> relational_expression
+Line 134: Reduce: logical_AND_expression -> equality_expression
+Line 134: Reduce: logical_OR_expression -> logical_AND_expression
+Line 134: Reduce: conditional_expression -> logical_OR_expression
+Line 134: Reduce: assignment_expression -> conditional_expression
+Line 134: Reduce: expression -> assignment_expression
+Line 134: Reduce: expression_opt -> expression
+Line 134: Reduce: jump_statement -> return expression_opt ;
+Line 134: Reduce: statement -> jump_statement
+Line 134: Reduce: block_item -> statement
+Line 134: Reduce: block_item_list -> block_item_list block_item
+Line 136: Reduce: block_item_list_opt -> block_item_list
+Line 136: Reduce: compound_statement -> begin block_item_list end
+Line 136: Reduce: function_definition -> type_specifier function_declarator compound_statement
+Line 140: Reduce: translation_unit -> function_definition
+Line 140: Reduce: translation_unit -> translation_unit function_definition
+Line 140: Reduce: translation_unit -> translation_unit function_definition
+Line 140: Reduce: translation_unit -> translation_unit function_definition
+Line 140: Reduce: translation_unit -> translation_unit function_definition
