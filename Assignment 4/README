@@ -1,0 +1,12 @@
+To run the program, open the folder in terminal and run the following instructions:
+
+g++ assembler.cpp
+./a.out
+
+The following files are generated:
+
+optable.txt : contains the optable
+symtable.txt : contains the symtable
+object.txt : equivalent object code generated
+source.txt: for verifying that source code (sample_input.txt) is correctly converted
+intermediate.txt: code generated after the first pass of the assembler
