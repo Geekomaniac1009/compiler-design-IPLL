@@ -1,0 +1,11 @@
+README:
+
+calc_220101122.l : The lexical analyser file
+calc_220101122.y: The bison file
+Makefile: contains instructions to create executable
+parse: executable file
+
+Instructions to execute on terminal.
+
+To run:
+./parse
