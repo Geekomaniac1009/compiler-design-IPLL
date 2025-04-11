@@ -165,7 +165,7 @@ int main() {
 ```
 
 ## Contributors
-- [Sanchay Baranwal](https://github.com/Geekomaniac)
+- [Sanchay Baranwal](https://github.com/Geekomaniac1009)
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
